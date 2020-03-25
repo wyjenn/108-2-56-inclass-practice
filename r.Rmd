@@ -95,5 +95,12 @@ dialogue <- c('小明說："明天不用上課。"',
 
 cat(dialogue, sep="\n")
 ```
+```{r}
+library(httr)
+library(dplyr)
+GET("https://api.github.com/repos/wyjenn/108-2-56-inclass-practice/commits") %>%
+  content() %>%
+  View()
+```
 
 
