@@ -69,5 +69,19 @@ vNum4 <- c(vNum4, vNum1) # 向量疊代 （recursive vector concatenate）
 ```{r}
 char1<-"你好"
 char2<-'你好'
+char1Vector<-c("你好","How are you?")
 ```
+```{r}
+class(char1<-"你好")
+```
+```{r}
+dialogue <- c('小明說："明天不用上課。"',
+               '小花說："真的嗎？"')
+
+cat(dialogue, sep="\n")
+```
+
+
+
+
 
