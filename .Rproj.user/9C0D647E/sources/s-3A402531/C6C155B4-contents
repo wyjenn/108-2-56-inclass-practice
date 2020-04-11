@@ -1,0 +1,211 @@
+---
+title: "20200407/31"
+author: "Jenny Wang"
+date: "2020/4/7"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+#list
+```{r}
+vector<-c(2,6,7)
+
+list<-list(2,6,7)
+
+vector
+list
+```
+「2020-03-31T13:40:55Z」在「一芳」買了「2杯」「水果茶」
+```{r}
+##vector儲存
+c("2020-03-31T13:40:55Z","一芳","2","水果茶")
+
+##list儲存
+library(lubridate)
+`小明交易1`<-list(ymd_hms("2020-03-31T13:40:55Z"),"一芳",2,"水果茶")
+`小明交易1`
+
+```
+
+```{r}
+# list含兩個vectors
+#"108-1","高級會計學","高等統計學","108-2","食在拉丁美洲"
+`小明108學年課表A`<-list(
+  c("108學年第1學期","高級會計學","高等統計學"), c("108學年第2學期","食在拉丁美洲"))
+print(`小明108學年課表A`)
+
+```
+
+```{r}
+# list含兩個vectors
+`小明108學年課表A` <- list(
+  c("108-1","高級會計學","高等統計學"),
+  c("108-2","食在拉丁美洲")
+)
+print(`小明108學年課表A`)
+```
+```{r}
+#2 list
+
+`小明108學年課表B`<-list(list("108學年第1學期","高級會計學","高等統計學"),
+     list("108學年第2學期","食在拉丁美洲"))
+print(`小明108學年課表B`)
+```
+
+```{r}
+#list & vector
+`小明108學年課表C`<-list(list(c("108學年第1學期","高級會計學","高等統計學")),list(c("108學年第2學期","食在拉丁美洲")))
+print(`小明108學年課表C`)
+```
+
+物件值可以命名
+```{r}
+`小明108學年課表D` <-list(
+  `上學期`=list(semester=c("108學年第1學期"),course=c("高級會計學","高等統計學")),
+  `下學期`=list(semester=c("108學年第2學期"),course=c("食在拉丁美洲"))
+)
+print(`小明108學年課表D` )
+```
+```{r}
+##GitHub使用者Martin老師，用戶email為mtlin@gm.ntpu.edu.tw，於2020-03-25T07:17:40Z在他的repo進行了更動，助教使用者emilyluckey，用戶email為emily007@gmail.com，於2020-03-26T08:18:40Z幫老師commit了這個變化，她在commit時於summary處寫下了update。
+
+library(lubridate)
+commit<-list(
+  author=list(
+    name="Martin老師",
+    email="mtlin@gm.ntpu.edu.tw",
+    date=ymd_hms("2020-03-25T07:17:40Z")),
+  committer=list(
+    name="emilyluckey",
+    email="emily007@gmail.com",
+    date=ymd_hms("2020-03-26T08:18:40Z")),
+  message="update")
+
+print(commit)
+```
+```{r}
+browseURL("https://api.github.com/repos/tpemartin/108-2-56-inclass-practice/commits") 
+```
+```{r}
+##轉換成json形式
+library(jsonlite) 
+toJSON(commit)
+```
+```{r}
+##學生小明，在108學年第1學期修了Alice老師所授的個體經濟學（得分85分）、Mark老師所授的總體經濟學(得分73分)。在108學年第2學期修了Jason老師所授的作業研究（得分90分）。
+
+`小明成績`<-list(
+  semester=c("108學年第1學期"),
+  grade=list(c("Alice老師","個體經濟學","85"),c("Mark老師","總體經濟學","73")),
+list(
+  semester=c("108學年第2學期"),
+  grade=list(c("Jason老師","作業研究","90")))
+  
+)
+
+print(`小明成績`)
+```
+```{r}
+##practice ans
+# 108-1 
+course1_1081 <- 
+  list(
+    name="個體經濟學",
+    teacher="Alice",
+    grade=85
+  )
+course2_1081 <-
+  list(
+    name="總體經濟學",
+    teacher="Mark",
+    grade=78
+  )
+`108-1修課記錄` <- 
+  list(
+    course1_1081,
+    course2_1081
+  )
+
+# 108-2
+course1_1082 <- 
+  list(
+    name="作業研究",
+    teacher="Jason",
+    grade=90
+  )
+`108-2修課記錄` <- 
+  list(
+    course1_1082
+  )
+
+# 整合兩學期
+`每學期修課記錄` <- list(
+  `108-1`=`108-1修課記錄`,
+  `108-2`=`108-2修課記錄`
+)
+
+# 完成記錄
+`小明的修課記錄` <- 
+  list(
+    name="小明",
+    semesters=`每學期修課記錄`
+  )
+print(`小明的修課記錄`)
+```
+```{r}
+library(jsonlite)
+fromJSON("https://opendata.cwb.gov.tw/fileapi/v1/opendataapi/F-C0032-001?Authorization=rdec-key-123-45678-011121314&format=JSON") ->
+  weather_next36hours
+```
+
+```{r}
+##今（“2020-03-31”）明（“2020-04-01”）「台北市」氣溫最高25度，最低18度；「新北市」氣溫最高24度，最低15度。
+library(lubridate)
+
+`天氣預報`<-list(
+  date=list(today=ymd("2020-03-31"),tomorrow=ymd("2020-04-01")),
+  temperature=list(
+    taipei=list(c("highest","25"),c("lowest","18")),
+    newtaipei=list(c("highest","24"),c("lowest","15")))
+)
+  print(`天氣預報`)
+```
+
+```{r}
+source("https://www.dropbox.com/s/mk7bxvu6a3lxf79/studentEnvironmentReport.R?dl=1",print.eval = T)
+```
+
+
+
+
+
+
+
+
+
+
+
+
