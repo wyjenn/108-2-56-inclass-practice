@@ -1,0 +1,1 @@
+{"frames":[{"character_number":0,"end_character_number":0,"end_line_number":0,"file":"","func":"str(listExample, max.level = 1)","line_number":0}],"message":"Error in str(listExample, max.level = 1) : 找不到物件 'listExample'\n"}

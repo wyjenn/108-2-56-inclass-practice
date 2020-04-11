@@ -1,0 +1,3 @@
+"0","str(listExample,max.level = 1)"
+"2","Error in str(listExample, max.level = 1) : 找不到物件 'listExample'
+"

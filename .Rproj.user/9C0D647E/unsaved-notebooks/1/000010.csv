@@ -1,0 +1,3 @@
+"0","get1 <- listExample[[""學期""]] # 學期拿出來，有3個元素的list"
+"2","錯誤: 找不到物件 'listExample'
+"
