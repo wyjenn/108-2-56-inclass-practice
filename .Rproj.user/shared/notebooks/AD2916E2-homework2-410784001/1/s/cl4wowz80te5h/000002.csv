@@ -1,0 +1,14 @@
+"0","Gamemaster[[1]][[731]] <-list(dex=778,"
+"0","                              speciesName=""Mimikyu"","
+"0","                              speciesId=""mimikyu"","
+"0","                              baseStats=Pikachu_stats,"
+"0","                              types=c(""ghost"",""fairy""),"
+"0","                             fastMoves=Jigglypuff[[1]]$fastMoves,"
+"0","                             chargedMoves=Jigglypuff[[1]]$chargedMoves,"
+"0","                             legacyMoves=Jigglypuff[[1]]$legacyMoves,"
+"0","                             defaultIVs=Pikachu[[1]]$defaultIVs"
+"0","                              "
+"0","                                )"
+"2","Error in Jigglypuff[[1]]$fastMoves : 
+  $ operator is invalid for atomic vectors
+"

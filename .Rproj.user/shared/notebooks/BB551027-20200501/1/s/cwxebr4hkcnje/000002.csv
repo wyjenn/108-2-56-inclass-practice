@@ -1,0 +1,3 @@
+"0","pick_not_fromTaipeiMetro <- ! pick_fromTaipeiMetro"
+"0","# 或"
+"0","pick_not_fromTaipeiMetro <- !(example$residence %in% set_TaipeiMetro) # (..) 裡面會先運算完才做外面!的處理"

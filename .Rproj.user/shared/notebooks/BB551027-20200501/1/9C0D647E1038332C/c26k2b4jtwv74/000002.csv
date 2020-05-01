@@ -1,0 +1,4 @@
+"0","#  1 用typeof()函數查詢電腦實質上如何看待garbageRoutes。"
+"0","typeof(garbageRoutes)  "
+"2","Error in typeof(garbageRoutes) : 找不到物件 'garbageRoutes'
+"
