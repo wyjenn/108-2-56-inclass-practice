@@ -2,6 +2,6 @@
     "installOptions" : {
         "installDependencies" : true,
         "installFromRepository" : true,
-        "libraryPath" : "C:/Users/Jenny Wang/OneDrive/文件/R/win-library/3.6"
+        "libraryPath" : "C:/Program Files/R/R-3.6.3/library"
     }
 }

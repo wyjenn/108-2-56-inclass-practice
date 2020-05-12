@@ -1,0 +1,12 @@
+"0","phrase <- c(""唧唧复唧唧"")"
+"0","# 目標是前面的唧唧"
+"0","target_regex <- ""唧唧"""
+"0","pattern <- glue::glue(""^{target_regex}"")"
+"0","print(pattern)"
+"1","^唧唧"
+"1","
+"
+"0","str_view(phrase, pattern) "
+"2","Error: htmlwidgets package required for str_view(). 
+Please install.packages(""htmlwidgets"") to use this functionality.
+"

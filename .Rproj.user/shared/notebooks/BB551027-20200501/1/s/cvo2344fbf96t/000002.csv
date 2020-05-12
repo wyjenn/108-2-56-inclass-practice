@@ -1,0 +1,20 @@
+"0","install.packages(c(""str_detect""))"
+"2","WARNING: Rtools is required to build R packages but is not currently installed. Please download and install the appropriate version of Rtools before proceeding:
+
+https://cran.rstudio.com/bin/windows/Rtools/
+"
+"1","Warning in "
+"1",""
+"1","install.packages"
+"1",""
+"1"," :
+  "
+"1",""
+"1","package ‘str_detect’ is not available (for R version 3.6.3)"
+"1",""
+"1","
+"
+"0","fruit <- c(""apple"", ""banana"", ""pear"", ""pinapple"")"
+"0","str_detect(fruit, ""a"")"
+"2","Error in str_detect(fruit, ""a"") : could not find function ""str_detect""
+"

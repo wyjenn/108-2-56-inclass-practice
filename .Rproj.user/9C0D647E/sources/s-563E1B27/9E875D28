@@ -1,0 +1,27 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1589244982579.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2423151459",
+    "id" : "9E875D28",
+    "lastKnownWriteTime" : 1589250861,
+    "last_content_update" : 1589250861516,
+    "path" : "C:/Users/Jenny Wang/Documents/GitHub/108-2-56-inclass-practice/20200512.Rmd",
+    "project_path" : "20200512.Rmd",
+    "properties" : {
+        "cursorPosition" : "285,21",
+        "last_setup_crc32" : "563E1B27bb338d19",
+        "scrollLine" : "235",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

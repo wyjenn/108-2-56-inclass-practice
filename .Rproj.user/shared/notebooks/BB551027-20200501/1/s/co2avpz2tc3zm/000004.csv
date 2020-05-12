@@ -1,3 +1,0 @@
-"0","CDC_chatbox <- readr::read_csv(""http://od.cdc.gov.tw/pr/CDC_chatbox.csv"")"
-"2","Error in loadNamespace(name) : there is no package called ‘readr’
-"
