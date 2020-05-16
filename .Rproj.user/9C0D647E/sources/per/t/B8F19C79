@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1589267284567.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4083774371",
+    "id" : "B8F19C79",
+    "lastKnownWriteTime" : 1589436336,
+    "last_content_update" : 1589436336377,
+    "path" : "C:/Jenny/NTPU/108/程式設計/homework4-410784001.Rmd",
+    "project_path" : null,
+    "properties" : {
+        "cursorPosition" : "89,14",
+        "last_setup_crc32" : "",
+        "scrollLine" : "55"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

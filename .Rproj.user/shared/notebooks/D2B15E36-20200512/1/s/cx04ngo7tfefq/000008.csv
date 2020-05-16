@@ -1,0 +1,6 @@
+"0","heartSutra <- c(""舍利子，色不異空，空不異色；色即是空，空即是色。"")"
+"0","str_view_all(heartSutra,""色"") # 檢視"
+"2","the condition has length > 1 and only the first element will be used"
+"2","the condition has length > 1 and only the first element will be used"
+"2","the condition has length > 1 and only the first element will be used"
+"2","the condition has length > 1 and only the first element will be used"
