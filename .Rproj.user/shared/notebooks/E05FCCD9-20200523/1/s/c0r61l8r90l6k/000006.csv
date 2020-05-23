@@ -1,0 +1,2 @@
+"0","map(dance,~.x$title)->dance_titled"
+"0","View(dance_titled)"

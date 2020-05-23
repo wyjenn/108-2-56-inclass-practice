@@ -1,0 +1,2 @@
+"0","map(dance,~length(.x$showInfo))-> list_numberOfShows "
+"0","View(list_numberOfShows)"
