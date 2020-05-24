@@ -1,0 +1,1 @@
+"0","names(sort(threeHeigths, decreasing = T))[[1]] -> highestPerson"

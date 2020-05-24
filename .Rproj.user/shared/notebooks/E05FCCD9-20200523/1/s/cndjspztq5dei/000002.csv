@@ -1,0 +1,8 @@
+"0","# 先排序由大到小，"
+"0","sort(threeHeigths, decreasing=T) -> sorted_heights"
+"0",""
+"0","# 把排好的人名取出"
+"0","names(sorted_heights) -> sorted_persons"
+"0",""
+"0","# 接著取出第一個位置的人名"
+"0","sorted_persons[[1]] -> highestPerson"

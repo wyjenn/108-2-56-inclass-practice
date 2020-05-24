@@ -1,0 +1,7 @@
+"0","library(purrr)"
+"0","map(dataList, is.numeric) -> results"
+"0","unlist(results) -> pick_numeric"
+"0",""
+"0","dataList[pick_numeric] -> num_element"
+"0","(num_element[[1]] > 50) -> pick_big"
+"0","num_element[[1]][pick_big] -> bigNumber"

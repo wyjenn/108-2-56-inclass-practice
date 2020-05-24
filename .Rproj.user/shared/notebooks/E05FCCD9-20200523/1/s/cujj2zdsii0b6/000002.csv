@@ -1,0 +1,8 @@
+"0","sort(threeHeigths,decreasing = T)%>%"
+"0","names(.)%>%"
+"0",".[[1]]->highestPerson"
+"0","print(highestPerson)"
+"1","[1]"
+"1"," ""John"""
+"1","
+"
