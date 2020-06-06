@@ -1,0 +1,3 @@
+"0","library(lubridate)"
+"0","dateInput <- today()"
+"0","locationInput <- ""新北市"""

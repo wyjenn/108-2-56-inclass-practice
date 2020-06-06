@@ -1,0 +1,20 @@
+"0","library(codetools)"
+"0","(myDemand2)"
+"1","function(p, intercept=10, slope=-5){
+"
+"1","  q_d <- intercept + slope*p
+"
+"1","  return(q_d)
+"
+"1","}
+"
+"0","findGlobals(myDemand2) # 不依靠global env裡的intercept/slope"
+"1","[1]"
+"1"," ""-""     "
+"1"," ""*""     "
+"1"," ""{""     "
+"1"," ""+""     "
+"1"," ""<-""    "
+"1"," ""return"""
+"1","
+"

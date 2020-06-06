@@ -1,0 +1,8 @@
+"0","demand_return(1.2) # 維持正常運作"
+"1","[1]"
+"1"," 4"
+"1","
+"
+"0","myDemand(1.2) # 無法運作"
+"2","Error in myDemand(1.2) : object 'intercept' not found
+"

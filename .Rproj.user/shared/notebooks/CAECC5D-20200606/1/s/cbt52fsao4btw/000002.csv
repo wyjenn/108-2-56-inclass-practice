@@ -1,0 +1,2 @@
+"0","# 移除global environment裡的intercept及slope"
+"0","rm(intercept, slope)"
