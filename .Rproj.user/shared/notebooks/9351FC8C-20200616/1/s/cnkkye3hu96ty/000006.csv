@@ -1,0 +1,7 @@
+"0","studentSequence <- 1:length(examSubmissionTime$section)"
+"0","library(purrr)"
+"0","map(studentSequence,"
+"0","    ~compute_howEarly("
+"0","      examSubmissionTime$section[[.x]],"
+"0","      examSubmissionTime$time[[.x]])"
+"0","    ) -> list_howEarly"
