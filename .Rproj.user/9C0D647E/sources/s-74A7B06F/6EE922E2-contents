@@ -163,6 +163,7 @@ learning_topics <-
       demand=demand_return # 等號右邊是呼叫demand_return的定義值，也就是function(...){...}值定義本身。
     )
   )
+
 learning_topics$functionsCreated$demand(1.2)
 ```
 ```{r}

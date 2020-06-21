@@ -1,0 +1,6 @@
+"0","miniFun2 <- function() lubridate::now()"
+"0","miniFun2()"
+"1","[1]"
+"1"," ""2020-06-21 21:08:19 CST"""
+"1","
+"
