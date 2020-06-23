@@ -1,0 +1,123 @@
+---
+title: '20200623'
+author: "Jenny Wang"
+date: "2020/6/23"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+```{r}
+library(stringr)
+library(lubridate)
+library(purrr)
+library(magrittr)
+```
+```{r}
+myAnswer <- c(2,3,6)
+correctAnswer <- c(2,3,5)
+
+if(myAnswer == correctAnswer){ # 只取用第一個T/F
+  print("你答對了")
+}
+```
+
+```{r}
+Sys.setenv("_R_CHECK_LENGTH_1_CONDITION_" = "true")
+```
+
+```{r}
+myAnswer <- c(2,3,6)
+correctAnswer <- c(2,3,5)
+
+if(all(myAnswer == correctAnswer)){ # 要全TRUE
+  print("你答對了")
+}
+```
+```{r}
+if(any(myAnswer == correctAnswer)){ # 只要有一個TRUE
+  print("裡頭有數字是對的")
+}
+```
+
+```{r}
+myAnswer <- c(1,2,3)
+correctAnswer <- factor(c(1,2,3))
+##先運算&&前面，再算後面
+if(is.factor(myAnswer) && all(myAnswer==correctAnswer)){
+  print("答對了")
+  10
+} else {
+  print("答錯了")
+  0
+}-> myGrade
+myGrade
+```
+
+```{r}
+##只有一個&同時進行
+if(is.factor(myAnswer) & all(myAnswer==correctAnswer)){
+  print("答對了")
+  10
+} else {
+  print("答錯了")
+  0
+}-> myGrade
+myGrade
+```
+
+```{r}
+myAge <- 40
+myChildrenNumber <- 5
+
+if(myAge >=65 | myChildrenNumber >3){
+  "符合申請資格"
+} else {
+  warning("不符合申請資格")
+}
+
+if(myAge >=65 ||  myChildrenNumber >3){
+  "符合申請資格"
+} else {
+  warning("不符合申請資格")
+}
+```
+
+```{r}
+x <- c(2,5,10,-21,3,8)
+ifelse(x %% 2==0, "even", "odd")
+```
+
+```{r}
+y <- sample(40:100,20, replace=T)
+dplyr::case_when(
+  y < 60 ~ "F",
+  60<=y & y < 70 ~"D",
+  71<=y & y < 80 ~"C",
+  80<=y & y < 90 ~"B",
+  90<=y ~ "A"
+)
+```
+
