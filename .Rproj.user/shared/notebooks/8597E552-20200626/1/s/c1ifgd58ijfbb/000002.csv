@@ -1,0 +1,9 @@
+"0","count<-count+1 #計數器+1
+newToss <- sample(c(""正"",""反""), 1, replace=T)
+print(newToss)
+"
+"1","[1]"
+"1"," ""正"""
+"1","
+"
+"0","if(newToss==""正""){sum<-sum+1}"

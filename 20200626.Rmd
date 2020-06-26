@@ -1,0 +1,97 @@
+---
+title: '20200626'
+author: "Jenny Wang"
+date: "2020/6/26"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+```{r}
+sum<-0  #幾次正面
+count<-0 #擲了幾次骰
+newToss <- sample(c("正","反"), 1, replace=T)
+
+#1st Toss
+count<-count+1 #計數器+1
+newToss <- sample(c("正","反"), 1, replace=T)
+print(newToss)
+if(newToss=="正"){sum<-sum+1}
+
+#2nd Toss
+count<-count+1 #計數器+1
+newToss <- sample(c("正","反"), 1, replace=T)
+print(newToss)
+if(newToss=="正"){sum<-sum+1}
+
+#3rd Toss
+count<-count+1 #計數器+1
+newToss <- sample(c("正","反"), 1, replace=T)
+print(newToss)
+if(newToss=="正"){sum<-sum+1}
+```
+```{r}
+sum<-0  #幾次正面
+count<-0 #擲了幾次骰
+for (.x in 1:100) {
+  count<-count+1 #計數器+1
+  newToss <- sample(c("正","反"), 1, replace=T)
+  if(newToss=="正"){
+    sum<-sum+1
+  }
+  if(sum==5){  ##跳出迴圈條件
+    break
+  }
+  }
+
+
+
+```
+
+while = for+ break
+```{r}
+sum<-0  #幾次正面
+count<-0 #擲了幾次骰
+while (sum!=5) { ##留在迴圈條件.non-break條件
+   count<-count+1 #計數器+1
+  newToss <- sample(c("正","反"), 1, replace=T)
+  if(newToss=="正"){
+    sum<-sum+1
+  }
+}
+```
+設定計數上限
+```{r}
+sum<-0  #幾次正面
+count <- 0 # 計數器開始值
+max_count <- 500 # 計數上限
+while(sum!=5 && count <= max_count){ # 增加計數上限條件
+  count <- count+1 # 計數器加1
+  newToss <- sample(c("正","反"), 1, replace=T)
+  if(newToss=="正"){
+    sum<-sum+1
+  }
+}
+```
+
